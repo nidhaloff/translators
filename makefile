@@ -6,4 +6,4 @@ start:
 	cd build && cmake .. && make --no-print-directory && bin/example
 
 commit:
-	git add . && git commit -m="$m"
+	git add . && git commit -m "$m"
