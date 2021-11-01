@@ -27,8 +27,7 @@ namespace translators {
                             }
         );
         const nlohmann::json& body = nlohmann::json::parse(r.text);
-        const std::string& translation = body["responseData"]["translatedText"];
-
+        const std::string& translation = body[constants::mymemory::RESPONSE_KEY][constants::mymemory::TRANSLATION_KEY];
         return translation;
     }
 }
