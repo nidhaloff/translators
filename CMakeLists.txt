@@ -21,7 +21,7 @@ target_compile_features(translators PUBLIC cxx_std_17)
 
 if (BUILD_LOCALLY)
         message(STATUS "building locally: output-> example")
-        add_executable(example src/main.cpp)
+        add_executable(example examples/main.cpp)
         target_link_libraries(example translators)
        
 else()
